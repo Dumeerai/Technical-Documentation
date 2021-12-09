@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            padding-left: 3px;
+            padding-right: 3px;
+            margin: 0;
+        }
+        #navbar{
+            background-color: hsl(0, 2%, 95%);
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            z-index: 2;
+            margin-top: 5px;
+        }
+        .nav-link{
+                line-height: 40px;
+            }
+        nav ul{
+            border: 2px solid hsl(0, 1%, 39%);
+            height: 88%;
+            padding: 0;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+            #navbar ul li{
+                border: 1px solid black;
+                list-style: none;
+                width: 100%;
+                position: relative;
+            }
+            #navbar a{
+                display: block;
+                /* padding: 0px 20px; */
+                text-decoration: none;
+                height: 50px;
+                overflow-y: hidden;
+                border: none;
+                cursor: pointer;
+            }
+        h1{
+        font-size: medium;
+        padding: 5px;
+        }
+        .nav-link{
+            border: 1px solid black;
+            width: 28vw;
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+        }
+        .nav-link:hover{
+            background-color: hsl(0, 2%, 90%);
+        }
+        #main-doc{
+            z-index: 1;
+            margin-left: 30vw;
+            padding-left: 10px;
+        }
+        @media all and (max-width: 600px){
+            /* for mobile */
+            #navbar{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                width: 100%;
+                max-height: 100vw;
+                border:none;
+                border-bottom: 2px solid;   
+            }
+            .nav-link{
+            width: 94vw;
+            }
+            h1{
+                font-size: xx-large;
+                text-align: center;
+            }
+            #main-doc{
+                margin: 1vw;
+                padding: 1vw;               
+            }
+        }
+        @media all and (min-width:601px){
+            #navbar{
+                border-right: solid;
+                border-color: rgba(0, 22, 22, 0.4);
+                height: 95vh;
+            }
+            #main-doc{
+            position: relative;
+            z-index: 1;
+            margin-left: 30vw;
+            padding-left: 15px;
+        }
+        h1{
+            line-height: 10vh;
+            font-size: 2vw;
+        }
+        }
+        @media all and (min-width:1024px){
+            #navbar{
+                border-right: solid;
+                border-color: rgba(0, 22, 22, 0.4);
+                height: auto;
+            }
+            h1{
+                text-align: center;
+                font-size: larger;
+            }
+        }
+        .main-section{
+            padding: 5px;
+        }
+        p, ul{
+            color: hsl(0, 2%, 33%);
+            padding: 10px;
+        }
+        .or{
+            line-height: 30px;
+        }
+        .code{
+        padding: 1vw;
+        padding-left: 5vw;
+        background-color: hsl(0, 3%, 87%);
+        color: brown;
+
+        }
+        ul{
+            padding-left: 6vw;
+        }
+    </style>
+</head>
+<body>
+        <nav id="navbar">
+            <header>
+            <h1>
+                PYTHON DOCUMENTATION
+            </h1>
+            </header>
+            <ul>
+            <li><a href="#Intorduction" class="nav-link">Intorduction</a></li>
+            <li><a href="#What_you_should_already_know" class="nav-link">What you should already know</a></li>
+            <li><a href="#Python_&_other_languages" class="nav-link">Python & other languages</a></li>
+            <li><a href="#PRINT_FUNCTION" class="nav-link">PRINT FUNCTION</a></li>
+            <li><a href="#Variables" class="nav-link">Variables</a></li>
+            <li><a href="#DECLAING_VARIABLES" class="nav-link">DECLAING VARIABLES</a></li>
+            <li><a href="#Variable_Scops" class="nav-link">Variable Scops</a></li>
+            <li><a href="#INITIALIZING_VARIABLES" class="nav-link">INITIALIZING VARIABLES</a></li>
+            <li><a href="#Constants" class="nav-link">Constants</a></li>
+            <li><a href="#Data_Types" class="nav-link">Data Types</a></li>
+            <li><a href="#Reference" class="nav-link">Reference</a></li>
+        </ul>
+        </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Intorduction">
+                <header>
+            <h3>
+               Intorduction 
+            </h3>
+                </header>
+            <article>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi explicabo quos quidem temporibus atque nesciunt vitae aspernatur alias, harum ipsum rem ad esse nemo dignissimos nam vel molestias quisquam sequi odit autem, error laborum! Cupiditate placeat, consequatur nostrum doloribus architecto laboriosam et nobis veritatis ipsam obcaecati nihil voluptatibus illo expedita.
+                </p>
+                <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga repudiandae mollitia totam quae officia! Nemo sapiente dolorum sit ab quisquam.
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, voluptatum laudantium amet at beatae molestias?</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates laboriosam tempore vel placeat nemo? Animi aperiam soluta dicta unde quos?</li>
+                </ul>
+            </p>
+        </article>
+        </section>
+        <section class="main-section" id="What_you_should_already_know">
+        <header>
+            <h3>
+                What you should already know
+            </h3>
+        </header>
+        <article>
+            <p> If you know following thing it's better to lerarn python. They are;</p>
+            <ul>
+                <li> A general understanding of the internet and the World Wide Web(www)</li>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, commodi!
+                </li>
+                <li> some porgraming experience is good for you to learn easily.if you are new to porgraming learn tutorials.</li>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id incidunt soluta nesciunt?
+                </li>
+            </ul>
+        </article>
+        </section>
+        <section class="main-section" id="Python_&_other_languages">
+        <header>
+            <h3>
+                python & other languages
+            </h3>
+        </header>
+        <article>
+            <p>
+               It took the programming community a couple of decades to appreciate Python. But since the early 2010’s, it has been booming — and eventually surpassing C, C#, Java and JavaScript in popularity. 
+            </p>
+            <p>
+                But until when will that trend continue? When will Python eventually be replaced by other languages, and why?  
+            </p>
+            <p>
+                Putting an exact expiry date on Python would be so much speculation, it might as well pass as Science-Fiction. Instead, I will assess the virtues that are boosting Python’s popularity right now, and the weak points that will break it in the future.  
+            </p>
+        </article>
+        </section>
+        <section class="main-section" id="PRINT_FUNCTION">
+            <header>
+                <h3>
+                    Print Function
+                </h3>
+            </header>
+            <article>
+                <p>The print() function prints the specified message to the screen, or other standard output device. The message can be a string, or any other object, the object will be converted into a string before written to the screen.
+                    </p>
+                   <br>
+                   <p class="code"> 
+                   <code>
+                    print("hello world")
+                </code><br> </p> <p class="or"> OR</p>
+                <p class="code"><code>
+                    containt='hello world'<br>
+                    print(containt)
+                </code></p>
+                <p>Out put</P> <br> 
+                    <p class="code">
+                    <code>
+                    hello world
+                </code>
+            </p>
+            </article>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>
+              <h3>
+                Variables
+              </h3>
+            </header>
+            <article>
+            <p>
+                A Python variable is a reserved memory location to store values. In other words, a
+                variable in a python program gives data to the computer for processing.
+            </p>
+            <p>
+                Every value in Python has a datatype. Different data types in Python are Numbers,
+                List, Tuple, Strings, Dictionary, etc. Variables can be declared by any name or even
+                alphabets like a, aa, abc, etc
+            </p>
+        </article>
+        </section>
+        <section class="main-section" id="DECLAING_VARIABLES">
+            <header>
+                  <h3>
+                      Declaing Variables
+                    </h3>
+            </header>
+            <article>
+                <p>
+                    Before they are used, all variables have to be declared. Declaring a variable means defining its type, and optionally, setting an initial value (initializing the variable). Variables do not have to be initialized (assigned a value) when they are declared, but it is often useful.
+                </p>
+                <p class="code">
+                <code>int inputVariable1;<br>
+                    int inputVariable2 = 0;     // both are correct </code>
+                </p>
+                <p>
+                    Programmers should consider the size of the numbers they wish to store in choosing variable types. Variables will roll over when the value stored exceeds the space assigned to store it. See below for an example.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Variable_Scops">
+        <header>
+              <h3>
+                  Variable Scops
+              </h3>
+        </header>
+        <article>
+           <p>
+            Another important choice that programmers face is where to declare variables. The specific place that variables are declared influences how various functions in a program will see the variable. This is called variable scope.
+           </p>
+        </article>
+        </section>
+        <section class="main-section" id="INITIALIZING_VARIABLES">
+            <header>
+                   <h3>
+                       Initializing Variables
+                    </h3>
+            </header>
+            <article>
+                <p>
+                    Variables may be initialized (assigned a starting value) when they are declared or not. It is always good programming practice however to double check that a variable has valid data in it, before it is accessed for some other purpose.
+                </p>
+                <p class="code"><code>
+                 int calibrationVal = 17;  // declare calibrationVal and set initial value 
+             </code>   
+             </p>
+            </article>
+        <section class="main-section" id="Constants">
+            <header>
+                   <h3>
+                       Constants
+                   </h3>
+            </header>
+            <article>
+                <p>
+                    A constant is a type of variable whose value cannot be changed. It is helpful to think of constants as containers that hold information which cannot be changed later.
+                </p>
+                <p>
+                    You can think of constants as a bag to store some books which cannot be replaced once placed inside the bag.
+                </p> 
+                <p>
+                    To work around this, you use all capital letters to name a variable to indicate that the variable should be treated as a constant. For example:
+                </p>
+                <p class="code"><code>
+                    FILE_SIZE_LIMIT = 2000
+                </code></p>
+                <h4>
+                    summary
+                </h4>
+                <ul>
+                    <li>Python doesn’t have built-in constant types.</li>
+                    <li>By convention, Python uses a variable whose name contains all capital letters to define a constant</li>
+                </ul> 
+            </article>
+        </section>
+        <section class="main-section" id="Data_Types">
+            <header>
+                    <h3>
+                        Data Types
+                    </h3>
+            </header>
+            <article>
+                <p>Data types are the classification or categorization of data items. It represents the kind of value that tells what operations can be performed on a particular data. Since everything is an object in Python programming, data types are actually classes and variables are instance (object) of these classes.
+                </p>
+                <p>
+                    Following are the standard or built-in data type of Python:
+                </p>
+                <ul>
+                    <li>
+                        <a href="#">Numeric</a>                       
+                    </li>
+                    <li>
+                        <a href="#">Sequence Type</a>
+                    </li>
+                    <li>
+                        <a href="#">Boolean</a>
+                    </li>
+                    <li>
+                        <a href="#">Set</a>
+                    </li>
+                    <li>
+                        <a href="#">Dicrionary</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>
+                    <h3>
+                        Reference
+                    </h3>
+            </header>
+            <article>
+                <ul>
+                    <li>
+                        All the documentation in this page is taken from <a href="#">MDN</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
